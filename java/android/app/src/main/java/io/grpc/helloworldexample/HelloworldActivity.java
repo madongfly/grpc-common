@@ -72,6 +72,7 @@ public class HelloworldActivity extends ActionBarActivity {
                 mChannel = OkHttpChannelBuilder.forAddress(mHost, mPort).build();
                 return sayHello(mChannel);
             } catch (Exception e) {
+
                 return "Failed... : " + e.getMessage();
             }
         }
